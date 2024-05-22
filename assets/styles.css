@@ -17,12 +17,8 @@ body {
     width: 100%;
 }
 
-.fa-solid {
+#icon-el {
     padding: 0 10px;
-}
-
-.fa-moon {
-    display: none !important;
 }
 
 .switch {
