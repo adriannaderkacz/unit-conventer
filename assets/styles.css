@@ -164,3 +164,91 @@ input:checked + .slider:before {
     font-weight: 400;
     color: #353535;
 }
+
+/* MEDIA QUERIES */
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .unit-conv {
+        padding: 10px 20px;
+    }
+
+    .unit-conv h1 {
+        font-size: 24px;
+    }
+
+    .unit-conv h2 {
+        font-size: 36px;
+        padding: 8px 20px;
+    }
+
+    .convert-btn {
+        padding: 8px 20px;
+    }
+
+    .length, .volume, .mass {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .unit-results {
+        padding: 20px 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .unit-conv {
+        padding: 15px 30px;
+    }
+
+    .unit-conv h1 {
+        font-size: 26px;
+    }
+
+    .unit-conv h2 {
+        font-size: 46px;
+        padding: 8px 22px;
+    }
+
+    .convert-btn {
+        padding: 9px 22px;
+    }
+
+    .length, .volume, .mass {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .unit-results {
+        padding: 25px 0;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .unit-conv {
+        padding: 18px 40px;
+    }
+
+    .unit-conv h1 {
+        font-size: 27px;
+    }
+
+    .unit-conv h2 {
+        font-size: 52px;
+        padding: 9px 23px;
+    }
+
+    .convert-btn {
+        padding: 9px 23px;
+    }
+
+    .length, .volume, .mass {
+        width: 90%;
+        margin-bottom: 22px;
+    }
+
+    .unit-results {
+        padding: 28px 0;
+    }
+}
