@@ -1,7 +1,6 @@
+// DARK MODE
 const toggleBtn = document.querySelector(".slider.round")
 const iconEl = document.getElementById("icon-el")
-
-// DARK MODE
 toggleBtn.addEventListener("click", function() {
     let element = document.body;
     element.classList.toggle("dark-mode");
@@ -29,10 +28,16 @@ const valueInput = document.querySelectorAll(".value-input")
 convertBtn.addEventListener("click", function() {
     const inputValue = parseFloat(valueEl.value);
     
+    // Check if the input value is empty
+    if (isNaN(inputValue)) {
+        alert("Please enter a valid number.");
+        return;
+    }
+
     valueInput.forEach(input => {
         input.textContent = inputValue;
     });
-    
+
     // Conversion rates
     const metersToFeet = 3.28084;
     const feetToMeters = 0.3048;
@@ -40,7 +45,6 @@ convertBtn.addEventListener("click", function() {
     const gallonsToLiters = 3.78541;
     const kilosToPounds = 2.20462;
     const poundsToKilos = 0.453592;
-
 
     // Perform conversion
     const feetValue = inputValue * metersToFeet;
