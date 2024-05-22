@@ -23,21 +23,31 @@
     <div class="main-container">
         <div class="unit-conv">
             <h1>Metric/Imperial Unit Conversion</h1>
-            <h2>20</h2>
+            <input type="number" id="value-el">
             <button class="convert-btn">Convert</button>
         </div>
         <div class="unit-results">
             <div class="unit-results-containers" id="length">
                 <h3 class="unit-title">Length (Meter/Feet)</h3>
-                <p class="unit-para">20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+                <p class="unit-para">
+                    <span class="value-input">
+                    </span> meters = <span id="value-feet"></span> feet | 
+                    <span class="value-input"></span> feet = <span id="value-meters"></span> meters
+                </p>
             </div>
             <div class="unit-results-containers" id="volume">
                 <h3 class="unit-title">Volume (Liters/Gallons)</h3>
-                <p class="unit-para">20 liters = 5.284 gallons | 20 gallons = 75.708 liters</p>
+                <p class="unit-para">
+                    <span class="value-input"></span> liters = <span id="value-gallons"></span> gallons | 
+                    <span class="value-input"></span> gallons = <span id="value-liters"></span> liters
+                </p>
             </div>
             <div class="unit-results-containers" id="mass">
                 <h3 class="unit-title">Mass (Kilograms/Pounds)</h3>
-                <p class="unit-para">20 kilos = 44.092 pounds | 20 pounds = 9.072 kilos</p>
+                <p class="unit-para">
+                    <span class="value-input"></span> kilos = <span id="value-pounds"></span> pounds | 
+                    <span class="value-input"></span> pounds = <span id="value-kilos"></span> kilos
+                </p>
             </div>
         </div>
     </div>
